@@ -1,0 +1,20 @@
+:root {
+    /* colors */
+    --first-color: #328079;
+    --second-color: #EEEBFF;
+    --h1-color: #12554F;
+    --button-color: #5353FF;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--h1-color);
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
