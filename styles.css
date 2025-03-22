@@ -1,20 +1,42 @@
 :root {
     /* colors */
-    --first-color: #328079;
-    --second-color: #EEEBFF;
-    --h1-color: #12554F;
-    --button-color: #5353FF;
+    --primary-purple: #3533C1;
+    --secondary-purple: #8381EB;
+    --off-black: #1C1C1B;
+    --orange: #F19318;
+    --background: #F7F4EE;
+
 }
 
-h1 {
-    font-family: "Open Sans", sans-serif;
+h1, h2 {
+    font-family: "Hepta Slab", serif;
     font-weight: 600;
     font-size: 2rem;
-    color: var(--h1-color);
+    color: var(--primary-purple);
+}
+
+h3 {
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--off-black);
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Karla", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    color: var(--off-black);
+}
+
+.link {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--primary-purple);
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: var(--secondary-purple);
 }
