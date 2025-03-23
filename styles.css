@@ -5,16 +5,39 @@
 body {
     padding: 1rem;
     background-color: var(--background);
+    background-image: url(images/background-image.png);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
 }
 
 .section-style {
     background-color: var(--background);
     border-top: solid 0.09rem var(--off-black);
     border-bottom: solid 0.09rem var(--off-black);
-    padding: 1.2rem 1.2rem 2rem 1.2rem;
+    padding: 2rem 1.2rem 2.8rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.portfolio-section {
+    padding: 2rem 1.2rem 2.8rem;
+    margin: 0;
+}
+
+.portfolio-item {
+    background-color: white;
+    border-radius: 0.3rem;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.item-text {
+    padding: 1rem 1rem 1.8rem;
 }
 
 .buttons {
@@ -30,4 +53,10 @@ body {
 #vector-1 {
     width: 8rem;
     margin-left: 8.5rem;
+}
+
+#vector-2 {
+    width: 3rem;
+    margin-left: 6rem;
+    margin-top: -0.5rem;
 }
