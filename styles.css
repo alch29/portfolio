@@ -1,42 +1,33 @@
-:root {
-    /* colors */
-    --primary-purple: #3533C1;
-    --secondary-purple: #8381EB;
-    --off-black: #1C1C1B;
-    --orange: #F19318;
-    --background: #F7F4EE;
-
+* {
+    margin: 0;
 }
 
-h1, h2 {
-    font-family: "Hepta Slab", serif;
-    font-weight: 600;
-    font-size: 2rem;
-    color: var(--primary-purple);
+body {
+    padding: 1rem;
+    background-color: var(--background);
 }
 
-h3 {
-    font-family: "Karla", sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: var(--off-black);
+.section-style {
+    background-color: var(--background);
+    border-top: solid 0.09rem var(--off-black);
+    border-bottom: solid 0.09rem var(--off-black);
+    padding: 1.2rem 1.2rem 2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-p {
-    font-family: "Karla", sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: var(--off-black);
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 
-.link {
-    font-family: "Karla", sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: var(--primary-purple);
-    text-decoration: underline;
+.title {
+    padding-bottom: 1rem;
 }
 
-.link:hover {
-    color: var(--secondary-purple);
+#vector-1 {
+    width: 8rem;
+    margin-left: 8.5rem;
 }

@@ -1,0 +1,77 @@
+:root {
+    /* colors */
+    --primary-purple: #3533C1;
+    --secondary-purple: #8381EB;
+    --off-black: #1C1C1B;
+    --orange: #F19318;
+    --background: #F7F4EE;
+}
+
+/* Line-height = font-size + 0.5rem */
+
+h1, h2 {
+    font-family: "Hepta Slab", serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--primary-purple);
+    margin: 0;
+    width: 100%;
+    line-height: 2rem;
+}
+
+h3 {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--off-black);
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+h4 {
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--off-black);
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+p {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: var(--off-black);
+    margin: 0;
+}
+
+.link {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--primary-purple);
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: var(--secondary-purple);
+}
+
+button {
+    background-color: var(--orange);
+    padding: 0.7rem;
+    width: 100%;
+    border: solid 0.1rem var(--orange);
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 10rem;
+    box-shadow: 0 0.2rem 0.4rem #1c1c1b80;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--background);
+    color: var(--orange);
+}
