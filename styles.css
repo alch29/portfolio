@@ -50,6 +50,24 @@ body {
     padding-bottom: 1rem;
 }
 
+.about-me-image {
+    width: 12rem;
+    border-radius: 40rem;
+    box-shadow: 0 0.2rem 0.4rem #1c1c1b80;
+    align-self: center;
+}
+
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.divider {
+    width: 100%;
+    border-top: solid 0.09rem var(--off-black);
+}
+
 #vector-1 {
     width: 8rem;
     margin-left: 8.5rem;
@@ -59,4 +77,13 @@ body {
     width: 3rem;
     margin-left: 6rem;
     margin-top: -0.5rem;
+}
+
+#vector-3 {
+    margin-left: 7rem;
+    margin-top: -2.6rem;
+}
+
+#vector-4 {
+    width: 9.2rem;
 }
