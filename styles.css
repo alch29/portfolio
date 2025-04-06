@@ -68,6 +68,17 @@ body {
     border-top: solid 0.09rem var(--off-black);
 }
 
+.mail-phone {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.mail-phone i {
+    color: var(--orange);
+    font-size: 1.2rem;
+}
+
 #vector-1 {
     width: 8rem;
     margin-left: 8.5rem;
