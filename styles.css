@@ -50,7 +50,7 @@ header {
 
 .ham-menu span {
     width: 100%;
-    border: 2px solid var(--off-black);
+    border: 2px solid var(--night);
     border-radius: 25px; 
     top: 50%;
     left: 50%;
@@ -162,6 +162,7 @@ header {
 .portfolio-item {
     background-color: var(--off-white);
     border-radius: 0.3rem;
+    box-shadow: 0 0.2rem 0.4rem #1c1c1b40;
 }
 
 .portfolio-item img {
@@ -208,8 +209,13 @@ header {
 }
 
 .mail-phone i {
-    color: var(--olive);
+    color: var(--lake);
     font-size: 1.2rem;
+}
+
+.some {
+    color: var(--lake);
+    font-size: 1.5rem;
 }
 
 #vector-1 {
@@ -239,8 +245,8 @@ header {
 }
 
 .icon-box {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background-color: var(--lake);
     border-radius: 0.3rem;
     display: flex;
@@ -249,29 +255,36 @@ header {
 }
 
 .icon-box i {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     color: var(--off-white);
 }
 
 .icon-box-js {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background-color: var(--lake);
     border-radius: 0.3rem;
     display: flex;
     justify-content: end;
     align-items: end;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     color: var(--off-white);
     font-family: "Karla", sans-serif;
     font-weight: 600;
-    line-height: 2.2rem;
+    line-height: 1.9rem;
 }
 
 .icon-box span {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     color: var(--off-white);
     font-family: "Karla", sans-serif;
     font-weight: 700;
     line-height: 2.3rem;
+}
+
+.footer {
+    padding: 2rem 1.6rem 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
