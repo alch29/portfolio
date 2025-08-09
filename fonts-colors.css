@@ -1,10 +1,12 @@
 :root {
     /* colors */
-    --primary-purple: #3533C1;
-    --secondary-purple: #8381EB;
+    --night: #292A53;
+    --lake: #7982B6;
     --off-black: #1C1C1B;
-    --orange: #F19318;
-    --background: #F7F4EE;
+    --daisy: #EFEBCE;
+    --off-white: #F9F8F7;
+    --olive: #A3A37F;
+    
 }
 
 /* Line-height = font-size + 0.5rem */
@@ -13,7 +15,7 @@ h1, h2 {
     font-family: "Hepta Slab", serif;
     font-weight: 500;
     font-size: 1.5rem;
-    color: var(--primary-purple);
+    color: var(--night);
     margin: 0;
     width: 100%;
     line-height: 2rem;
@@ -50,19 +52,19 @@ p {
     font-family: "Karla", sans-serif;
     font-weight: 500;
     font-size: 1rem;
-    color: var(--primary-purple);
+    color: var(--night);
 }
 
 .link:hover {
-    color: var(--secondary-purple);
+    color: var(--lake);
 }
 
 button {
-    background-color: var(--orange);
+    background-color: var(--lake);
     padding: 0.7rem;
     width: 100%;
-    border: solid 0.1rem var(--orange);
-    color: white;
+    border: solid 0.1rem var(--lake);
+    color: var(--off-white);
     font-family: "Karla", sans-serif;
     font-weight: 500;
     font-size: 1rem;
@@ -72,6 +74,6 @@ button {
 }
 
 button:hover {
-    background-color: var(--background);
-    color: var(--orange);
+    background-color: var(--off-white);
+    color: var(--lake);
 }
