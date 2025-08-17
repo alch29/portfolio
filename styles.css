@@ -151,6 +151,11 @@ header {
     padding: 2rem 1.2rem 2.8rem;
     margin: 0;
     gap: 2rem;
+    cursor: pointer;
+}
+
+.portfolio-section a {
+    text-decoration: none;
 }
 
 .grid {
@@ -172,6 +177,10 @@ header {
 
 .item-text {
     padding: 1rem 1rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+
 }
 
 .buttons {
