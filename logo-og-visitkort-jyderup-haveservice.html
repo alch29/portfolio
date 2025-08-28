@@ -38,22 +38,49 @@
     <main>
         <section class="section-style" id="hero">
             <div class="buttons">
-                <button>Tilbage</button>
+                <a href="index.html#portfolio">
+                    <button class="go-back"><i class="fa-solid fa-arrow-left-long"></i>Tilbage</button>
+                </a>
             </div>
             <div>
                 <div class="title">
-                    <h1>Overskrift</h1>
-                    <img id="vector-1" src="images/vector/Vector-1.svg" alt="vector that underlines word">
+                    <h1><span class="underlined-word">Overskrift</span></h1>
                 </div>
                 <div>
                     <p class="portfolio-item-text-full">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
                 </div>
-            </div>  
+            </div>
+
+            <div>
+                <div class="slideshow-container" id="slideshow-1">
+                    <div class="slides fade">
+                        <img src="images/visitkort-logo.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/jyderup-haveservice-logo.svg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                    </div>
+
+                    <button class="prev" onclick="plusSlides(-1, 'slideshow-1')">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="next" onclick="plusSlides(1, 'slideshow-1')">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow-1')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow-1')"></span>
+                </div>
+            </div>
+
         </section>
     </main>
 
-
-
+<footer class="footer">
+    <div>
+        <p>© Aleksandra Christensen</p>
+    </div>
+</footer>
 </body>
 </html>

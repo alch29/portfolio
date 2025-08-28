@@ -3,7 +3,7 @@
 }
 
 body {
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: var(--daisy);
     background-size: cover;
     /* background-position: center; */
@@ -34,7 +34,7 @@ header {
 
 .menu a {
     width: 25px;
-    margin-left: 35px;
+    margin-left: 1.9rem;
     align-self: center;
 }
 
@@ -44,7 +44,7 @@ header {
     margin-left: auto;
     position: relative;
     align-self: center;
-    margin-right: 35px;
+    margin-right: 1.9rem;
     cursor: pointer;
 }
 
@@ -107,7 +107,7 @@ header {
 }
 
 .off-screen-menu ul a {
-    color: var(--secondary);
+    color: var(--night);
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -127,7 +127,7 @@ header {
     width: 0;
     height: 3px;
     border-radius: 35px;
-    background-color: var(--secondary);
+    background-color: var(--night);
     transition: width 0.3s ease;
 }
 
@@ -137,9 +137,9 @@ header {
 
 .section-style {
     background-color: var(--off-white);
-    border-top: solid 0.09rem var(--off-black);
-    border-bottom: solid 0.09rem var(--off-black);
-    padding: 2rem 1.6rem 2.8rem;
+    /* border-top: solid 0.09rem var(--off-black);
+    border-bottom: solid 0.09rem var(--off-black); */
+    padding: 2rem 1.9rem 2.8rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -148,7 +148,7 @@ header {
 .portfolio-section {
     display: flex;
     flex-direction: column;
-    padding: 2rem 1.2rem 2.8rem;
+    padding: 2rem 1.9rem 2.8rem;
     margin: 0;
     gap: 2rem;
     cursor: pointer;
@@ -190,7 +190,7 @@ header {
 }
 
 .title {
-    padding-bottom: 1rem;
+    padding-bottom: 1.8rem;
 }
 
 .about-me-image {
@@ -223,31 +223,17 @@ header {
 }
 
 .some {
-    color: var(--lake);
+    color: var(--honey);
     font-size: 1.8rem;
     display: flex;
     gap: 1rem;
     margin-top: 0,
 }
 
-#vector-1 {
-    width: 8rem;
-    margin-left: 8.5rem;
-}
-
 #vector-2 {
     width: 3rem;
     margin-left: 6rem;
     margin-top: -0.5rem;
-}
-
-#vector-3 {
-    margin-left: 7rem;
-    margin-top: -2.6rem;
-}
-
-#vector-4 {
-    width: 9.2rem;
 }
 
 .icon-grid {
@@ -299,8 +285,112 @@ header {
 } 
 
 .footer {
-    padding: 2rem 1.6rem 1rem;
+    padding: 2rem 1.9rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* slideshow */
+
+.slideshow-container {
+    position: relative;
+}
+
+.slides {
+    display: none;   
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.2rem 0.4rem #1c1c1b40; 
+}
+
+.prev, .next, .prev2, .next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 60px;
+    padding: 0;
+    transition: 0.6s ease;
+    border-radius: 0 6px 6px 0;
+    background-color: var(--daisy);
+    border: none;
+    display: flex;
+    justify-content: center;
+    box-shadow: none;
+    color: var(--honey);
+}
+.next, .next2 {
+    right: 0;
+    border-radius: 6px 0 0 6px;
+}
+
+.next i {
+    font-size: 1.8rem;
+    /* transform: rotate(180deg); */
+    margin: 0;
+    align-self: center;
+}
+
+.prev i {
+    font-size: 1.8rem;
+    margin: 0;
+    align-self: center;  
+}
+
+/* .next2 img{
+    width: 20px;
+    height: auto;
+    transform: rotate(180deg);
+    margin: 0;
+    align-self: center;
+}
+
+.prev2 img {
+    width: 20px;
+    height: auto;
+    margin: 0;
+    align-self: center;
+} */
+
+.prev:hover, .next:hover {
+    background-color: var(--honey);
+    color: var(--daisy);
+}
+
+.prev2:hover, .next2:hover {
+    background-color: rgba(50, 128, 121, 0.3);
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+.dot {
+    cursor: pointer;
+    height: 0.9rem;
+    width: 0.9rem;
+    margin: 0.1rem;
+    background-color: rgba(121, 130, 182, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active-dot, .dot:hover {
+    background-color: var(--lake);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }

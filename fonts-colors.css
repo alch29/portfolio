@@ -5,7 +5,7 @@
     --off-black: #1C1C1B;
     --daisy: #EFEBCE;
     --off-white: #F9F8F7;
-    --olive: #A3A37F;
+    --honey: #C79C4E;
     
 }
 
@@ -61,10 +61,10 @@ p {
 }
 
 button {
-    background-color: var(--lake);
+    background-color: var(--honey);
     padding: 0.7rem;
     width: 100%;
-    border: solid 0.1rem var(--lake);
+    border: solid 0.1rem var(--honey);
     color: var(--off-white);
     font-family: "Karla", sans-serif;
     font-weight: 500;
@@ -76,5 +76,44 @@ button {
 
 button:hover {
     background-color: var(--off-white);
-    color: var(--lake);
+    color: var(--honey);
 }
+
+.go-back i {
+    margin-right: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.underlined-word {
+    position: relative;
+    display: inline-block;
+}
+
+.underlined-word::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.65em; /* adjust based on font size */
+    width: 100%;
+    height: 0.8em; /* depends on your SVG proportions */
+    background: url("images/vector/Vector-1.svg") no-repeat center bottom;
+    background-size: contain; /* scales with word width */
+    pointer-events: none;
+  }
+
+  .highlighter {
+    position: relative;
+    display: inline-block;
+  }
+
+  .highlighter::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.65em; /* adjust based on font size */
+    width: 100%;
+    height: 0.8em; /* depends on your SVG proportions */
+    background: url("images/vector/vector-high.svg") no-repeat center bottom;
+    background-size: contain; /* scales with word width */
+    pointer-events: none;
+  }
