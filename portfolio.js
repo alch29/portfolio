@@ -11,8 +11,10 @@ hamMenu.addEventListener('click', () => {
 
 
 Promise.all([
-  fetch('logo-og-visitkort-jyderup-haveservice.html').then(response => response.text()),
-  fetch('test.html').then(response => response.text()),
+  fetch('jyderup-haveservice.html').then(response => response.text()),
+  fetch('illustrationer.html').then(response => response.text()),
+  fetch('visitkort.html').then(response => response.text()),
+  fetch('lundager-produkt.html').then(response => response.text()),
 ])
   .then(dataArray => {
     dataArray.forEach((html, index) => {
@@ -36,6 +38,17 @@ Promise.all([
       let container = document.querySelector(`.text-container-${index + 1}`);
       if (container) {
         container.innerHTML = `<p class="portfolio-item-text">${excerpt}</p>`;
+      }
+
+      let tempH4 = document.createElement('div');
+      tempH4.innerHTML = html;
+
+      let heading = tempH4.querySelector('.portfolio-item-heading').innerText;
+      if (!heading) return;
+      console.log(heading)
+      let headingContainer = document.querySelector(`.heading-container-${index + 1}`);
+      if (headingContainer) {
+        headingContainer.innerHTML = `<h4 class="portfolio-item-heading-small">${heading}</h4>`;
       }
     });
   })

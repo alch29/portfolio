@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts-colors.css">
+    <script src="portfolio.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/985c518ea2.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        
+        <nav class="menu">
+            <a href="index.html"><img class="logo" src="images/logo-icon-night.svg" alt="logo symbol"></a>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="off-screen-menu">
+            <ul>
+                <a href="#portfolio"><li>PORTFOLIO</li></a>
+                <a href="#om-mig"><li>OM MIG</li></a>
+                <a href="#kontakt-mig"><li>KONTAKT MIG</li></a>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <section class="section-style" id="hero">
+            <div class="buttons">
+                <a href="index.html#portfolio">
+                    <button class="go-back"><i class="fa-solid fa-arrow-left-long"></i>Tilbage</button>
+                </a>
+            </div>
+            <div>
+                <div class="title">
+                    <h1 class="portfolio-item-heading">Produktbilleder til Gartneriet LUNDAGER</h1>
+                </div>
+                <div>
+                    <p class="portfolio-item-text-full">Som multimedie assistent hos Gartneriet LUNDAGER har jeg taget og redigeret mange billeder af hovedsageligt forskellige slags stueplanter, samt keramiske planteskjulere. Billederne er redigeret i Photoshop, for at fritlægge dem fra baggrunden og eventuelt rette farver eller småfejl ved produktet.</p>
+                    <br>
+                    <p>På slideshowet har jeg valgt at fremvise nogle få af de omtrent 500 produktbilleder som jeg tog og redigerede til Gartneriets lancering af afdelingen LUNDAGER HOME, i 2025.</p>
+                </div>
+            </div>
+
+            <div class="about-me-section">
+                <h3>Værktøjer brugt</h3>
+                <div class="icon-grid">
+                    <div class="icon-box">
+                        <span class="icon-text">Ps</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div>
+                <div class="slideshow-container" id="slideshow-1">
+                    <div class="slides fade">
+                        <img src="images/lundager-produktbilleder/_80020761.jpg" alt="">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/lundager-produktbilleder/_80002.jpg" alt="">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/lundager-produktbilleder/_80070162.jpg" alt="">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/lundager-produktbilleder/_80070269.jpg" alt="">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/lundager-produktbilleder/lampe.jpg" alt="">
+                    </div>
+
+                    <button class="prev" onclick="plusSlides(-1, 'slideshow-1')">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="next" onclick="plusSlides(1, 'slideshow-1')">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow-1')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow-1')"></span>
+                    <span class="dot" onclick="currentSlide(3, 'slideshow-1')"></span>
+                    <span class="dot" onclick="currentSlide(4, 'slideshow-1')"></span>
+                    <span class="dot" onclick="currentSlide(5, 'slideshow-1')"></span>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+<footer class="footer">
+    <div>
+        <p>© Aleksandra Christensen</p>
+    </div>
+</footer>
+</body>
+</html>

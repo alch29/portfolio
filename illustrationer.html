@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts-colors.css">
+    <script src="portfolio.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/985c518ea2.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        
+        <nav class="menu">
+            <a href="index.html"><img class="logo" src="images/logo-icon-night.svg" alt="logo symbol"></a>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="off-screen-menu">
+            <ul>
+                <a href="#portfolio"><li>PORTFOLIO</li></a>
+                <a href="#om-mig"><li>OM MIG</li></a>
+                <a href="#kontakt-mig"><li>KONTAKT MIG</li></a>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <section class="section-style" id="hero">
+            <div class="buttons">
+                <a href="index.html#portfolio">
+                    <button class="go-back"><i class="fa-solid fa-arrow-left-long"></i>Tilbage</button>
+                </a>
+            </div>
+            <div>
+                <div class="title">
+                    <h1 class="portfolio-item-heading">Illustrationer og karakterdesign</h1>
+                </div>
+                <div>
+                    <p class="portfolio-item-text-full">Alle illustrationer er lavet i Procreate, hvor nogle af dem er blevet skitseret på forhånd med blyant og papir. Ved andet billede viser jeg også min proces fordelt ud på fire forskellige trin: skitse, rentegning, flade farver og til sidst tilføjes detaljer.</p>
+                </div>
+            </div>
+
+            <div class="about-me-section">
+                <h3>Værktøjer brugt</h3>
+                <div class="icon-grid">
+                    <div class="icon-box">
+                        <img src="images/procreate-icon.svg" alt="procreate icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div>
+                <div class="slideshow-container" id="slideshow-1">
+                    <div class="slides fade">
+                        <img src="images/illustrationer/expressive.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/illustrationer/Untitled_Artwork 24.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/illustrationer/library.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/illustrationer/summer.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/illustrationer/Reflection.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/illustrationer/Untitled_Artwork 11.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/illustrationer/sunny.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                    </div>
+                    <div class="slides fade">
+                        <img src="images/illustrationer/Untitled_Artwork 17.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                    </div>
+
+                    <button class="prev" onclick="plusSlides(-1, 'slideshow-1')">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="next" onclick="plusSlides(1, 'slideshow-1')">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow-1')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow-1')"></span>
+                    <span class="dot" onclick="currentSlide(3, 'slideshow-1')"></span>
+                    <span class="dot" onclick="currentSlide(4, 'slideshow-1')"></span>
+                    <span class="dot" onclick="currentSlide(5, 'slideshow-1')"></span>
+                    <span class="dot" onclick="currentSlide(6, 'slideshow-1')"></span>
+                    <span class="dot" onclick="currentSlide(7, 'slideshow-1')"></span>
+                    <span class="dot" onclick="currentSlide(8, 'slideshow-1')"></span>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+<footer class="footer">
+    <div>
+        <p>© Aleksandra Christensen</p>
+    </div>
+</footer>
+</body>
+</html>
